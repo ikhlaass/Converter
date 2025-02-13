@@ -31,7 +31,7 @@ public class NumberConverter {
                 System.out.print("Masukkan Integer: ");
                 int decimal = scanner.nextInt();
                 String octal = "";
-                while (decimal > 0 || binary.length() < 8) {
+                while (decimal > 0) {
                     octal = (decimal % 8) + octal;
                     decimal = decimal / 8;
                 }
