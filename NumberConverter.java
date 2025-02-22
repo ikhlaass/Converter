@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class NumberConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Converter yy = new Converter();
         int choice;
         do {
             System.out.println("===== Konversi Bilangan =====");
@@ -21,31 +22,15 @@ public class NumberConverter {
             if (choice == 1) {
                 System.out.print("Masukkan Integer: ");
                 int decimal = scanner.nextInt();
-                String binary = "";
-                while (decimal > 0 || binary.length() < 8) {
-                    binary = (decimal % 2) + binary;
-                    decimal = decimal / 2;
-                }
-                System.out.println("Hasil Biner: " + binary);
+                yy.inttobiner(decimal);
             } else if (choice == 2) {
                 System.out.print("Masukkan Integer: ");
                 int decimal = scanner.nextInt();
-                String octal = "";
-                while (decimal > 0) {
-                    octal = (decimal % 8) + octal;
-                    decimal = decimal / 8;
-                }
-                System.out.println("Hasil Oktal: " + octal);
+                yy.inttookt(decimal);
             } else if (choice == 3) {
                 System.out.print("Masukkan Integer: ");
                 int decimal = scanner.nextInt();
-                String hex = "";
-                char[] hexChars = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-                while (decimal > 0) {
-                    hex = hexChars[decimal % 16] + hex;
-                    decimal = decimal / 16;
-                }
-                System.out.println("Hasil Hexadecimal: " + hex);
+                yy.inttohexa(decimal);
             } else if (choice == 4) {
                 System.out.print("Masukkan Biner: ");
                 String binary = scanner.next();
