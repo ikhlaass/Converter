@@ -5,6 +5,7 @@ public class NumberConverter {
         Scanner scanner = new Scanner(System.in);
         Converter yy = new Converter();
         int choice;
+        System.out.print("\033[H\033[2J");
         do {
             System.out.println("===== Konversi Bilangan =====");
             System.out.println("1. Integer ke Biner");
