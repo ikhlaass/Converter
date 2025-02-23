@@ -34,11 +34,7 @@ public class NumberConverter {
             } else if (choice == 4) {
                 System.out.print("Masukkan Biner: ");
                 String binary = scanner.next();
-                int decimal = 0;
-                for (int i = 0; i < binary.length(); i++) {
-                    decimal = decimal * 2 + (binary.charAt(i) - '0');
-                }
-                System.out.println("Hasil Integer: " + decimal);
+                yy.bintoint(binary);
             } else if (choice == 5) {
                 System.out.print("Masukkan Oktal: ");
                 String octal = scanner.next();
