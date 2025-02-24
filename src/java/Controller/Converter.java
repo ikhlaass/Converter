@@ -1,3 +1,5 @@
+package Controller;
+
 public class Converter {
 
     public static String inttobiner (int decimal) {
@@ -39,7 +41,7 @@ public class Converter {
         return decimal;
     }
 
-    public static int okttoint(String Oktal) {
+    public static int okttoint(String octal) {
         int decimal = 0;
         for (int i = 0; i < octal.length(); i++) {
             decimal = decimal * 8 + (octal.charAt(i) - '0');
@@ -72,10 +74,10 @@ public class Converter {
                     octal = (decimal % 8) + octal;
                     decimal = decimal / 8;
                 }
-                return decimal;
+                return octal;
     }
 
-    public static int bintohexa(String binary) {
+    public static String bintohexa(String binary) {
         int decimal = 0;
         for (int i = 0; i < binary.length(); i++) {
             decimal = decimal * 2 + (binary.charAt(i) - '0');
@@ -86,7 +88,7 @@ public class Converter {
             hex = hexChars[decimal % 16] + hex;
             decimal = decimal / 16;
         }
-        return decimal;
+        return hex;
     }
 
 }

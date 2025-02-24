@@ -1,8 +1,10 @@
-import java.util.InputMismatchException;
+package View;
+
 import java.util.Scanner;
+import Controller.Converter;
+
 
 public class NumberConverter {
-
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void run() {
