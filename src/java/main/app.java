@@ -1,9 +1,9 @@
-package main;
+package Main;
 
-import View.NumberConverter;  // Import class NumberConverter
+import View.ViewMain;  
 
-public class app {
+public class App {
     public static void main(String[] args) {
-        NumberConverter.run();  // Panggil metode run() dari NumberConverter
+        ViewMain.run();  
     }
 }
