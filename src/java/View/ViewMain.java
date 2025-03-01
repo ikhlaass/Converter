@@ -21,7 +21,6 @@ public class ViewMain {
 
             case 1:
                 System.out.println("=====================* Decimal to Biner *=====================");
-                System.out.print("Insert a Decimal Number : ");
                 number.setDecimal();
                 System.out.println("Decimal Number     : " + number.getDecimal());
                 System.out.println("Hasil dalam biner: " + Converter.inttobiner(number.getDecimal()));
@@ -29,7 +28,6 @@ public class ViewMain {
 
             case 2:
                 System.out.println("=====================* Decimal to Octal *=====================");
-                System.out.print("Insert a Decimal Number : ");
                 number.setDecimal();
                 System.out.println("Decimal Number     : " + number.getDecimal());
                 System.out.println("Hasil dalam oktal: " + Converter.inttookt(number.getDecimal()));
@@ -37,7 +35,6 @@ public class ViewMain {
 
             case 3:
                 System.out.println("=====================* Decimal to HexaDecimal *=====================");
-                System.out.print("Insert a Decimal Number : ");
                 number.setDecimal();
                 System.out.println("Decimal Number     : " + number.getDecimal());
                 System.out.println("Hasil dalam heksadesimal: " + Converter.inttohexa(number.getDecimal()));
@@ -65,7 +62,6 @@ public class ViewMain {
 
             case 1:
                 System.out.println("=====================* Octal to Biner *=====================");
-                System.out.print("Insert a Octal Number : ");
                 number.setOctal();
                 System.out.println("Octal Number   : " + number.getOctal());
                 System.out.println("Hasil dalam desimal: " + Converter.okttoint(number.getOctal()));
@@ -73,7 +69,6 @@ public class ViewMain {
 
             case 2:
                 System.out.println("=====================* Octal to Decimal *=====================");
-                System.out.print("Insert a Octal Number : ");
                 number.setOctal();
                 System.out.println("Octal Number     : " + number.getOctal());
                 System.out.println("Decimal Number   : " + Converter.okttoint(number.getOctal()));
@@ -81,7 +76,6 @@ public class ViewMain {
 
             case 3:
                 System.out.println("=====================* Octal to HexaDecimal *=====================");
-                System.out.print("Insert a Octal Number : ");
                 number.setOctal();
                 System.out.println("Octal Number       : " + number.getOctal());
                 System.out.println("HexaDecimal Number : " + Converter.okttohexa(number.getHexaDecimal()));
@@ -111,7 +105,6 @@ public class ViewMain {
 
             case 1:
                 System.out.println("=====================* Biner to Octal *=====================");
-                System.out.print("Insert a Biner Number : ");
                 number.setBiner();
                 System.out.println("Biner Number   : " + number.getBiner());
                 System.out.println("Octal Number   : " + Converter.bintookt(number.getBiner()));
@@ -119,7 +112,6 @@ public class ViewMain {
 
             case 2:
                 System.out.println("=====================* Biner to Decimal *=====================");
-                System.out.print("Insert a Biner Number : ");
                 number.setBiner();
                 System.out.println("Biner Number     : " + number.getBiner());
                 System.out.println("Decimal Number   : " + Converter.bintoint(number.getOctal()));
@@ -127,7 +119,6 @@ public class ViewMain {
 
             case 3:
                 System.out.println("=====================* Biner to HexaDecimal *=====================");
-                System.out.print("Insert a Biner Number : ");
                 number.setBiner();
                 System.out.println("Biner Number         : " + number.getBiner());
                 System.out.println("HexaDecimal Number   : " + Converter.bintohexa(number.getBiner()));
@@ -156,7 +147,6 @@ public class ViewMain {
 
             case 1:
                 System.out.println("=====================* HexaDecimal to Biner *=====================");
-                System.out.print("Insert a HexaDecimal Number : ");
                 number.setHexaDecimal();
                 System.out.println("HexaDecimal Number   : " + number.getHexaDecimal());
                 System.out.println("Biner Number         : " + Converter.hexatobin(number.getHexaDecimal()));
@@ -164,7 +154,6 @@ public class ViewMain {
 
             case 2:
                 System.out.println("=====================* HexaDecimal to Decimal *=====================");
-                System.out.print("Insert a HexaDecimal Number : ");
                 number.setHexaDecimal();
                 System.out.println("HexaDecimal Number     : " + number.getHexaDecimal());
                 System.out.println("Decimal Number         : " + Converter.hexatoint(number.getHexaDecimal()));
@@ -172,7 +161,6 @@ public class ViewMain {
 
             case 3:
                 System.out.println("=====================* HexaDecimal to Octal *=====================");
-                System.out.print("Insert a HexaDecimal Number : ");
                 number.setHexaDecimal();
                 System.out.println("HexaDecimal Number : " + number.getHexaDecimal());
                 System.out.println("Octal Number       : " + Converter.hexatookt(number.getHexaDecimal()));
